@@ -1,4 +1,4 @@
-# Panda Touch
+# Panda Touch new
 <img src=img/PandaTouch/panda_touch.png width="600"/>
 
 The CAD files for the Panda Touch can be downloaded [here](https://github.com/bigtreetech/PandaTouch/tree/master/3D)
