@@ -205,11 +205,11 @@ When performing any actions, please ensure that the correct AMS unit and filamen
 One is the firmware file and the other contains the graphics and fonts. 
 This will help us to add more languages to the Panda touch in the future. Be sure to download both the .bin and .img files.
 
-## Using features of the new firmware
-#### Grouping logic  
+##### Using features of the new firmware
+###### Grouping logic
 Allow you to create up to 10 new groups to control multiple printers:
 
-#### How to add a group
+###### How to add a group
 * Tap + in the connected printer list to pop up the multi function menu.  
 <br><img src=img/PandaTouch/press_plus.png width="600"/>
 * Choose the add group option.
@@ -220,11 +220,11 @@ Allow you to create up to 10 new groups to control multiple printers:
 <br><img src=img/PandaTouch/group_name.png width="600"/>
 * You now can see the group in the printer list, tapping this group will allow you to control the whole group but the controls presented will be those of the group leader. 
 
-#### Switch to group
+###### Switch to group
 * To control an individual printer, simply click on the card that corresponds to it and you will be taken to the control page that sends commands to it in isolation even if it is part of a group. If you send a command that takes some time and then you send a command to a group that it belongs to, the second command will be ignored if the first is still busy.
 <br><img src=img/PandaTouch/add_group_ok.png width="600"/> 
 
-### Start printing with one printer
+##### Start printing with one printer
 * Tap to choose the file in the USB disk list to print.
 * Set printing parameters:
 <br><img src=img/PandaTouch/start_print_one.png width="600"/>
@@ -236,7 +236,7 @@ Allow you to create up to 10 new groups to control multiple printers:
 * Automatically jump to the main interface and display printer data.
 <br><img src=img/PandaTouch/start_print_one_ing.png width="600"/>
 
-### Multiple printing
+##### Multiple printing
 * Tap to choose the file in the USB disk list to print.
 * Set printing parameters:
 <br><img src=img/PandaTouch/start_print.png width="600"/>
@@ -252,12 +252,12 @@ Allow you to create up to 10 new groups to control multiple printers:
 
 The group controls menu same as the version V1.0.1
 
-### How to exchange Panda Picture
+##### How to exchange Panda Picture
 You can check out the tool form this link [exchange picture tool](https://github.com/bigtreetech/PandaTouch/blob/master/Firmware/1.0.3/)
 * Please upgrade the PandaTouch firmware to V1.0.3 before proceeding.
 * The operation to replace the Panda image can only be performed on a Windows system.
 * Please ensure that the image you want to replace meets the following requirements: pixel width less than 280, pixel height less than 306, pixel depth 32-bit color, and image format PNG.
-#### Step by Step
+###### Step by Step
 * The tool can run at windows system only.
 * Download the Panda Exchange Tool from the firmware folder of V1.0.3.
 * Ensure that the image you want to replace meets the format requirements, rename it, and replace the new_panda.png file in this folder. The Panda Exchange Tool folder already contains a new Panda image. If you don't have a specific image to replace, you can skip this step.
@@ -274,7 +274,7 @@ You can check out the tool form this link [exchange picture tool](https://github
 
 * First released factory firmware.
 
-##### Grouping logic  
+##### Grouping logic
 the Panda Touch has 4 settable control modes:
 &nbsp;&nbsp;&nbsp;&nbsp;<img src=img/PandaTouch/control_mode.png width="600"/>
 
@@ -296,9 +296,9 @@ the Panda Touch has 4 settable control modes:
   * you cannot control sync printers using the `Temperature/Axis` and `Filament` menus. They must be temporarily set to `Master` in order to do this. In a future firmware version the grouping scheme will be adjusted such that this is possible.
 * `Disconnected`: The Panda Touch will close the connection to any printers in this state and no instructions will be sent to it.
 
-#### Start printing
+##### Start printing
 
-#### Start printing from USB flash drive
+###### Start printing from USB flash drive
 
 * Ensure that the file system of the USB flash drive is *formatted as FAT32*.
 * Export the `.3mf` file from either Bambu Studio or Orca Slicer using the `Export plate sliced file` option. <br> <img src=img/PandaTouch/export_3mf.png width="600"/>
@@ -324,7 +324,7 @@ the Panda Touch has 4 settable control modes:
   * 2. Please ensure that the remaining capacity of the MicroSD card is sufficient to write the files to be uploaded.
 * Printing will begin once the upload is complete. For very large `.3mf` files the transfer time may take some minutes to each printer. <br> <img src=img/PandaTouch/printing.png width="600"/>
 
-#### Start printing from the printer's MicroSD card
+###### Start printing from the printer's MicroSD card
 
 * Make sure the MicroSD card is inserted into the `Master` printer and *formatted as FAT32*.
 * Go to the `Master printer's MicroSD card` menu.
@@ -336,7 +336,7 @@ the Panda Touch has 4 settable control modes:
 * The file list displayed in this menu is from the `Master` printer. If we want to print files from another printer, we can set the printer we want to print to as the `Master`.
 * Just like the steps in [Start printing from USB flash drive](#start-printing-from-usb-flash-drive), select the printer to start printing.
 
-#### Multiple printing
+###### Multiple printing
 When a printer in the `sync` state is printing, or multiple printers in other states are printing at the same time, the Panda Touch will display the `Multiple printing` menu as shown below.
 <br> <img src=img/PandaTouch/multi_printing.png width="600"/>
 The following group controls exist from this menu:
