@@ -10,7 +10,7 @@ TRANS_FILE="${TRANS_DIR}active_translations"
 MKDOCS_MAIN="${MKDOCS_DIR}mkdocs-main.yml"
 
 # Fetch translations
-git clone --depth 1 https://github.com/dilixi/docs ${TRANS_DIR}
+git clone --depth 1 https://github.com/bigtreetech/docs ${TRANS_DIR}
 
 # Create new mkdocs-main.yml with language links
 cp ${MKDOCS_DIR}mkdocs.yml ${MKDOCS_MAIN}
@@ -41,21 +41,24 @@ while IFS="," read dirname langsite langdesc langsearch; do
   Motor_Drives=$(sed -n '21p' ${locale_dir}/Navigation.md)
   TMC_Series=$(sed -n '23p' ${locale_dir}/Navigation.md)
   EZ_Series=$(sed -n '25p' ${locale_dir}/Navigation.md)
-  Software_Tutorials=$(sed -n '27p' ${locale_dir}/Navigation.md)
-  BIQU=$(sed -n '29p' ${locale_dir}/Navigation.md)
-  Panda_series=$(sed -n '31p' ${locale_dir}/Navigation.md)  
-  Panda_Hotend=$(sed -n '33p' ${locale_dir}/Navigation.md)  
-  Panda_Flow=$(sed -n '35p' ${locale_dir}/Navigation.md)  
-  X1=$(sed -n '37p' ${locale_dir}/Navigation.md)  
-  P1=$(sed -n '39p' ${locale_dir}/Navigation.md)  
-  Panda_Revo=$(sed -n '41p' ${locale_dir}/Navigation.md)  
-  X1=$(sed -n '43p' ${locale_dir}/Navigation.md)  
-  P1=$(sed -n '45p' ${locale_dir}/Navigation.md)  
-  Extruders=$(sed -n '47p' ${locale_dir}/Navigation.md)  
-  Hotends=$(sed -n '49p' ${locale_dir}/Navigation.md)  
-  Sensor_modules=$(sed -n '51p' ${locale_dir}/Navigation.md)  
-  Printers=$(sed -n '53p' ${locale_dir}/Navigation.md)  
-  Cooling_solution=$(sed -n '55p' ${locale_dir}/Navigation.md)  
+  Modules=$(sed -n '27p' ${locale_dir}/Navigation.md)
+  Software_Tutorials=$(sed -n '29p' ${locale_dir}/Navigation.md)
+  BIQU=$(sed -n '31p' ${locale_dir}/Navigation.md)
+  Panda_series=$(sed -n '33p' ${locale_dir}/Navigation.md)  
+  Panda_Hotend=$(sed -n '35p' ${locale_dir}/Navigation.md)  
+  Panda_Flow=$(sed -n '37p' ${locale_dir}/Navigation.md)  
+  X1=$(sed -n '39p' ${locale_dir}/Navigation.md)  
+  P1=$(sed -n '41p' ${locale_dir}/Navigation.md)  
+  Panda_Revo=$(sed -n '43p' ${locale_dir}/Navigation.md)  
+  X1=$(sed -n '45p' ${locale_dir}/Navigation.md)  
+  P1=$(sed -n '47p' ${locale_dir}/Navigation.md)  
+  Panda_Claw=$(sed -n '49p' ${locale_dir}/Navigation.md)  
+  Extruders=$(sed -n '51p' ${locale_dir}/Navigation.md)  
+  Hotends=$(sed -n '53p' ${locale_dir}/Navigation.md)  
+  Sensor_modules=$(sed -n '55p' ${locale_dir}/Navigation.md)  
+  Printers=$(sed -n '57p' ${locale_dir}/Navigation.md)  
+  tools=$(sed -n '59p' ${locale_dir}/Navigation.md)
+  Cooling_solution=$(sed -n '61p' ${locale_dir}/Navigation.md)  
   
   # Copy markdown files to new_docs_dir
   echo "Copying $dirname to $langsite"
@@ -100,6 +103,7 @@ while IFS="," read dirname langsite langdesc langsearch; do
   sed -i "s%Motor Drives:$%${Motor_Drives}:%" "${new_mkdocs_file}"
   sed -i "s%TMC Series:$%${TMC_Series}:%" "${new_mkdocs_file}"  
   sed -i "s%EZ Series:$%${EZ_Series}:%" "${new_mkdocs_file}"   
+  sed -i "s%Modules:$%${Module}:%" "${new_mkdocs_file}"   
   sed -i "s%Software Tutorials:$%${Software_Tutorials}:%" "${new_mkdocs_file}"
   sed -i "s%BIQU:$%${BIQU}:%" "${new_mkdocs_file}"
   sed -i "s%Panda series:$%${Panda_series}:%" "${new_mkdocs_file}"
@@ -110,10 +114,12 @@ while IFS="," read dirname langsite langdesc langsearch; do
   sed -i "s%Panda Revo:$%${Panda_Revo}:%" "${new_mkdocs_file}"    
   sed -i "s%X1:$%${X1}:%" "${new_mkdocs_file}"    
   sed -i "s%P1:$%${P1}:%" "${new_mkdocs_file}"  
+  sed -i "s%Panda Claw:$%${Panda_Claw}:%" "${new_mkdocs_file}"    
   sed -i "s%Extruders:$%${Extruders}:%" "${new_mkdocs_file}"  
   sed -i "s%Hotends:$%${Hotends}:%" "${new_mkdocs_file}"   
   sed -i "s%Sensor modules:$%${Sensor_modules}:%" "${new_mkdocs_file}"
-  sed -i "s%Printers:$%${Printers}:%" "${new_mkdocs_file}"     
+  sed -i "s%Printers:$%${Printers}:%" "${new_mkdocs_file}"   
+  sed -i "s%tools:$%${tools}:%" "${new_mkdocs_file}"    
   sed -i "s%Cooling solution:$%${Cooling_solution}:%" "${new_mkdocs_file}"
 
   # Build site
