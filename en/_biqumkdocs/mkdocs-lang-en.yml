@@ -150,7 +150,7 @@ nav:
         - MMB CAN V1.0.md
       - CNC Series:
         - Rodent.md
-    - IOT:
+    - Kraken Series:
       - CB1.md
       - CB2.md
       - Pi2.md
@@ -162,7 +162,7 @@ nav:
       - Klipper Touch.md
       - Panda Branch.md 
       - DZ01.md
-    - Displays:
+    - IOT:
       - TFT43-DIP.md
       - TFT35 E3.md
       - TFT35.md
@@ -171,8 +171,8 @@ nav:
       - HDMI5.md
       - HDMI7 V1.0.md
       - HDMI7 V1.2.md
-    - Motor Drives:
-      - TMC Series:
+    - Displays:
+      - Motor Drives:
         - TMC2130.md
         - TMC5160.md
         - TMC2209.md
@@ -181,7 +181,7 @@ nav:
         - TMC5160TPlus.md
         - TMC5160T Pro V1.0.md
         - Tutorials.md
-      - EZ Series:
+      - TMC Series:
         - EZ2130.md
         - EZ2208.md
         - EZ2225.md
@@ -194,26 +194,26 @@ nav:
       - ADXL345.md
       - SKSM.md
       - Eddy.md
-    - Software Tutorials:
+    - Modules:
       - Multiple 3D Printers.md
       - Software Configuration.md
       - Software Installation.md
       - EBB Series.md
       - libinput_calibration.md    
-  - BIQU:
+  - Software Tutorials:
     - Panda series: 
-      - Panda Hotend:
+      - Panda series:
         - Panda Flow/CHT:
           - X1:
             - Panda Flow X1.md
-          - P1:
+          - Panda Revo:
             - Panda Flow P1.md
-        - Panda Revo:
+        - X1:
           - X1:
             - Panda Revo X1 Hotend.md
-          - P1:
+          - Panda Revo:
             - Panda Revo P1 Hotend.md
-      - Panda Claw:
+      - P1:
           - Panda A1Mini.md
           - Panda P1 X1.md
       - PandaTouch.md
@@ -235,13 +235,13 @@ nav:
       - H2 V2X.md 
     - Hotends: 
       - Hotends.md 
-    - Sensor modules:
+    - Hotends:
       - Hermit Crab 2 Series.md
     - Printers: 
       - Printers.md 
-    - tools:
+    - Printers:
       - belter.md
-    - Cooling solution:
+    - tools:
       - Universal Turbo Kit.md 
       - Eco Turbo Kit.md 
 
