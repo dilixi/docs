@@ -139,6 +139,7 @@ nav:
         - M4P.md
         - M5P.md
         - M8P.md
+        - M8P-V2_0.md
       - EBB系列:
         - EBB 36 CAN.md
         - EBB 42 CAN.md
@@ -148,6 +149,7 @@ nav:
         - U2C.md
       - MMB系列:
         - MMB CAN V1.0.md
+        - MMB CAN V2.0.md
       - CNC系列:
         - Rodent.md
       - Kraken系列:
@@ -160,6 +162,7 @@ nav:
       - PAD7.md
       - KNOMI.md
       - KNOMI2.md
+      - PandaKnomi.md
       - Panda Touch.md
       - Klipper Touch.md
       - Panda Branch.md 
@@ -201,7 +204,8 @@ nav:
       - Software Configuration.md
       - Software Installation.md
       - EBB Series.md
-      - libinput_calibration.md    
+      - libinput_calibration.md
+      - pi_custom_logo.md
   - BIQU:
     - Panda series: 
       - Panda 热端:
@@ -224,10 +228,16 @@ nav:
       - Panda Jet.md 
       - Panda Fur.md 
       - Panda Lux.md 
+      - Panda-Lux-A1-A1mini.md
       - Panda-Door.md 
+      - Panda-Enclosure.md
       - Panda PWR.md
       - Panda Jetpack.md
       - Panda extruder.md
+      - PandaEdge.md
+      - Panda-AMS-Holder.md
+      - Panda-AMS-Cable.md
+      - Panda-AMS-Lite-Cable.md
     - Extruders: 
       - Extruders.md 
       - H2 V2S.md 
@@ -235,6 +245,7 @@ nav:
       - H2 V2S Lite.md 
       - H2 V2S Lite Revo.md 
       - H2 V2X.md 
+      - Nebula.md 
     - Hotends: 
       - Hotends.md 
     - 传感器模块:
