@@ -509,7 +509,7 @@ Click again to return to the file list view.
 
 ### How To Change The Panda Picture
 
-Use [this tool](https://pandatouch.us.kg/) to change the picture of the panda.
+Use [this tool](https://ptimgtool.bttwiki.com/) to change the picture of the panda.
 * Ensure that the firmware version of Panda Touch is 1.0.6 or above. 
 * Please ensure that the image you want to replace meets the following requirements: 
   * Pixel width less than 280
@@ -661,8 +661,8 @@ If there is something you would like to see in a future release of the Panda Tou
 - **Pre-Selection Options Before Printing**: The Auto Power-Off feature of Panda PWR is now by default set to off.
 - **Optimization of New_Panda File Verification**: Device checks the file upon power-up to avoid update interruptions that could prevent startup.
 - **Optimized Chamber Temperature Display Icon**.
-- **Improved IMG File Generation**: New new_panda files can now be generated using the [online tool](https://pandatouch.us.kg/).
-
+- **Improved IMG File Generation**: New new_panda files can now be generated using the [online tool](https://ptimgtool.bttwiki.com).
+https://ptimgtool.bttwiki.com/
 ##### Bug Fixes
 - **Fixed Access Code Data Synchronization Issue**: Discrepancies in Access code data retrieved from the cloud server can cause loss of SN data, making it impossible to connect to the printer.
 #### [V1.0.5.1](https://github.com/bigtreetech/PandaTouch/blob/master/Firmware/1.0.5.1/panda_touch-v1.0.5.1.bin) 
