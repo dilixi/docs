@@ -260,7 +260,7 @@ It's now time to get your device powered up. **MAKE SURE THAT YOUR PRINTER IS PO
   Setting the Hostname:<br/>
 
   - The hostname must consist only of letters (a-z, A-Z), numbers (0-9), and hyphens (-), and must start with a letter.
-  - The hostname must be at least 8 characters long and no more than 32 characters.
+  - The hostname must be at least 8 characters long and no more than 32 characters.(On firmware version `V1.0.2` and earlier, please do not exceed 15 characters, otherwise the device will not start and needs to be updated to firmware version `V1.0.3` or later)
 
   After choosing a new hostname, tap `Set Hostname` to update Panda Knomi. A popup will confirm the successful change. The device must be restarted for the hostname change to take effect. This can be initiated by tapping `OK` in the confirmation popup, or postponed by closing the popup with the `x` button. After changing the hostname, you will need to make sure that you use that new hostname to access the web UI.<br/>
   <img src=img/PandaKnomi/en_hostname.png width="300"/>
@@ -483,7 +483,7 @@ If there is something you would like to see in a future release of the Panda Kno
 > <font size="2">Note: Panda Knomi firmware updates should be available as a free OTA, This step is only necessary when OTA is is not working on your network as may be the case with some network configurations.</font>
 
 - If your computer does not have the CH340 driver, please download and install [CH341SER.EXE](https://www.wch-ic.com/downloads/CH341SER_EXE.html)<br/>
-- Download the [Flash Download Tools](https://www.espressif.com.cn/en/support/download/other-tools)
+- Download the [Flash Download Tools](https://www.espressif.com/en/support/download/other-tools)
   <img src=img/PandaKnomi/en_download_esp_tool.png width="800"/>
 - Download the [Panda Knomi firmware](https://github.com/bigtreetech/PandaKnomi)
 - Hold the `Boot` button on Panda Knomi, connect it via `Type-C` to your computer, and a new COM port should appear in the device manager.<br/>
